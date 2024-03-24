@@ -4,7 +4,7 @@
 <p>A program to allow the user to access two different financial calculators: an investment calculator and a home loan repayment calculator.</p>
 
 <h2>Installation:</h2>
-<p>Go to https://github.com/tolumorohunfola/Financial-Calulator</p>
+<p>Go to https://github.com/tolumorohunfola/Financial-Calculator</p>
 <p>Click the green drop-down saying 'Code'.</p>
 <p>Copy the url given from one of the options: HTTPS, SSH or GitHub CLI.</p>
 <p>On your command line, navigate to the folder you would like to store the code in.</p>
