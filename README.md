@@ -1,7 +1,7 @@
 <h1>Name: Financial Calculator</h1>
 
 <h2>Description:</h2>
-<p>A program to allow the user to access two different fianncial calculators: an investment calculator and a home loan repayment calculator.</p>
+<p>A program to allow the user to access two different financial calculators: an investment calculator and a home loan repayment calculator.</p>
 
 <h2>Installation:</h2>
 <p>Go to https://github.com/tolumorohunfola/Financial-Calulator</p>
