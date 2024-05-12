@@ -12,7 +12,7 @@
 <p>Now you're ready to go!</p>
 
 <h2>Usage:</h2>
-<p>On your preferred text editor, open the finance_calculator.py file and run it in the terminal.</p>
+<p>On your preferred text editor, open the finance_calculators.py file and run it in the terminal.</p>
 
 <h2>Credits:</h2>
 <p>Toluwani Morohunfola</p>
