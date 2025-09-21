@@ -1,4 +1,4 @@
-from check_end import *
+from check_end import * # importing all variables and functions from the check end file
 
 
 #function to request input since it occurs a lot in this program
@@ -21,8 +21,8 @@ def request_input(description, type_needed):
             check_end(input_variable)
     elif type_needed == "interest rate":
         # while statement to repeatedly request input until it is valid
-        while input_variable.isdigit() == False or int(input_variable) < 0 or int(input_variable) > 100:
-            print("Your input is invalid. It must be a positive, whole number less than 100.")
+        while input_variable.isalpha() == True or float(input_variable) < 0 or float(input_variable) > 100:
+            print("Your input is invalid. It must be a positive number less than 100.")
             input_variable = input(description)
             check_end(input_variable)
     elif type_needed == "simple or compound":

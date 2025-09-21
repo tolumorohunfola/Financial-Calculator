@@ -1,7 +1,7 @@
 # A program to calculate monthly payments for a house or returns for an investment where the details are provided by the user
 
 import math # importing the math module
-from request_input import *
+from request_input import * # importing all variables and functions from the request input file
 
 # intro and flagging how to exit
 print("This is a program to calculate monthly payments for a house or returns for an investment. To terminate the program, please type 'end' when input is requested.")
@@ -47,14 +47,15 @@ if user_menu_choice == "bond":
     # ask the user to input the present value of the house (int), the interest rate in percent, the number of months they plan to take to repay the bond
     house_present_value = int(request_input("Please type in the current value of the house in pounds without commas or spaces: ", "positive whole number"))
     interest_rate_bond_yearly = float(request_input("Please type in the annual interest rate in percent: ", "interest rate"))
-    number_of_months_to_repay = int(request_input("Please type in the number of months you plan to take to repay the bond: ", "positive whole number"))
+    number_of_years_to_repay = int(request_input("Please type in the number of years you plan to take to repay the bond: ", "positive whole number"))
+    number_of_months_to_repay = number_of_years_to_repay * 12
 
-    # adjusting the interest rate to be monthly and dividing by 100
+    # adjusting the interest rate to be monthly and dividing by 100 - this is because the interest accumlates each month rather than yearly
     interest_rate_bond_monthly = interest_rate_bond_yearly / 12 / 100
 
     # bond repayment formula
     repayment = (interest_rate_bond_monthly * house_present_value) / (1 - (1 + interest_rate_bond_monthly) ** (-number_of_months_to_repay))
-    print(f"If the present value of the house is £{house_present_value}, the yearly interest rate is {interest_rate_bond_yearly}% and you plan to take {number_of_months_to_repay} months to repay, you will need to pay £{repayment:.2f} per month on the bond.")
+    print(f"If the present value of the house is £{house_present_value}, the yearly interest rate is {interest_rate_bond_yearly}% and you plan to take {number_of_years_to_repay} years (AKA {number_of_months_to_repay} months) to repay, you will need to pay around £{repayment:.2f} per month on the bond.")
 
 
 
