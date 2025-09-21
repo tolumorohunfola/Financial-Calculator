@@ -1,4 +1,4 @@
-from calculations import net_worth_calculation
+from calculations import net_worth_calculation # importing from the calculations file
 
 user_debt_total = 140000
 user_savings_total = 500000
